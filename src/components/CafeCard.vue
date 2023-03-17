@@ -11,10 +11,6 @@
 			type: String,
 			default: "No review yet",
 		},
-		docId: {
-			type: String,
-			required: true,
-		},
 		favorite: {
 			type: Boolean,
 			default: false,

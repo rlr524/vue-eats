@@ -1,10 +1,12 @@
-import { firebaseApp } from "@/firebase";
 import { createApp } from "vue";
-import { VueFire } from "vuefire";
+import App from "./App.vue";
 import { createPinia } from "pinia";
-import "vuetify/styles";
+import router from "./router";
+import { firebaseApp } from "@/firebase";
+import { VueFire } from "vuefire";
 import "@mdi/font/css/materialdesignicons.css";
 import { createVuetify } from "vuetify";
+import "vuetify/styles";
 import * as components from "vuetify/components";
 import * as directives from "vuetify/directives";
 
@@ -12,9 +14,6 @@ const vuetify = createVuetify({
 	components,
 	directives,
 });
-
-import App from "./App.vue";
-import router from "./router";
 
 const app = createApp(App);
 
